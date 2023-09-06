@@ -1,0 +1,9 @@
+fib = [1, 2]
+count = 0
+
+for i in range(2, 26, 1):
+    fib.append( int(fib[i-1] + fib[i-2]) )
+    if i >= 4 and i < 25:
+        count += 1
+        print("елемент під номером ", i+1, ":", fib[i])
+print("кількість елементів: ", count)
